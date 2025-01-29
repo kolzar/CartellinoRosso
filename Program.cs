@@ -1,8 +1,10 @@
 ﻿using CartellinoRosso.Core;
 using CartellinoRosso.Core.Interface;
 using CartellinoRosso.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace CartellinoRosso
 {
@@ -10,12 +12,17 @@ namespace CartellinoRosso
     {
         static void Main(string[] args)
         {
+            var services = new ServiceCollection();
             // Configura la lettura del file appsettings.json
             var config = new ConfigurationBuilder()
                 .SetBasePath(AppContext.BaseDirectory)
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                 .Build();
-            
+
+            // Configura il DbContext
+            services.AddDbContext<DbContext>(options =>
+                options.UseSqlite(config.GetConnectionString("DefaultConnection")));
+
             // Configura il DI container
             var serviceProvider = new ServiceCollection()
                 .AddSingleton<IConfiguration>(config)
