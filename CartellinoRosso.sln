@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartellinoRosso", "CartellinoRosso.csproj", "{89C77EFF-9FF9-4119-A5C0-3A894A4DD1DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89C77EFF-9FF9-4119-A5C0-3A894A4DD1DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89C77EFF-9FF9-4119-A5C0-3A894A4DD1DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89C77EFF-9FF9-4119-A5C0-3A894A4DD1DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89C77EFF-9FF9-4119-A5C0-3A894A4DD1DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F9C210F-C0B4-4ACC-8316-97E84F7D199F}
+	EndGlobalSection
+EndGlobal
